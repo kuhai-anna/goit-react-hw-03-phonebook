@@ -21,7 +21,7 @@ export const ContactName = styled.span`
 `;
 
 export const DeleteButton = styled.button`
-  padding: 4px 12px;
+  padding: ${props => props.theme.spacing(1)} ${props => props.theme.spacing(3)};
 
   outline: none;
   border: 1px solid transparent;

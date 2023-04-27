@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const SectionWrapper = styled.section`
-  padding: 24px 0;
+  padding: ${props => props.theme.spacing(6)} ${props => props.theme.spacing(0)};
 `;
 
 export const Container = styled.div`
   margin: 0 auto;
-  padding: 0 16px;
+  padding: ${props => props.theme.spacing(0)} ${props => props.theme.spacing(4)};
   width: ${props => props.theme.spacing(80)};
 `;
 

@@ -7,7 +7,7 @@ import {
 
 export const Form = styled(FormikForm)`
   margin: 0 auto;
-  padding: ${props => props.theme.spacing(4)};
+  padding: ${props => props.theme.spacing(6)} ${props => props.theme.spacing(4)};
   width: ${props => props.theme.spacing(72)};
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -21,7 +21,7 @@ export const FormField = styled.div`
     margin-bottom: ${props => props.theme.spacing(3)};
   }
   :last-of-type {
-    margin-bottom: ${props => props.theme.spacing(6)};
+    margin-bottom: ${props => props.theme.spacing(7)};
   }
 `;
 
@@ -37,7 +37,7 @@ export const LabelText = styled.span`
 `;
 
 export const Field = styled(FormikField)`
-  padding: 4px 8px;
+  padding: ${props => props.theme.spacing(1)} ${props => props.theme.spacing(2)};
   width: ${props => props.theme.spacing(67.5)};
 
   outline: none;
@@ -56,7 +56,7 @@ export const Field = styled(FormikField)`
 
 export const FormButton = styled.button`
   margin: 0 auto;
-  padding: 4px 12px;
+  padding: ${props => props.theme.spacing(1)} ${props => props.theme.spacing(3)};
 
   outline: none;
   border: 1px solid transparent;
