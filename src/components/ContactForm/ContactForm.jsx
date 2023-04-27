@@ -9,6 +9,7 @@ import {
   FormField,
   FormLabel,
   ErrorMessage,
+  LabelText,
 } from './ContactForm.styled';
 
 const schema = yup.object().shape({
@@ -53,7 +54,7 @@ export const ContactForm = ({ onSubmit }) => {
       <Form>
         <FormField>
           <FormLabel>
-            Name
+            <LabelText>Name</LabelText>
             <Field
               name="name"
               pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -65,7 +66,7 @@ export const ContactForm = ({ onSubmit }) => {
         </FormField>
         <FormField>
           <FormLabel>
-            Number
+            <LabelText>Number</LabelText>
             <Field
               type="tel"
               name="number"

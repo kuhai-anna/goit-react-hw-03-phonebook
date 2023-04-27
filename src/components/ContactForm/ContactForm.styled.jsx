@@ -26,12 +26,14 @@ export const FormField = styled.div`
 `;
 
 export const FormLabel = styled.label`
-  display: block;
-  margin-bottom: ${props => props.theme.spacing(1)};
-
   color: ${props => props.theme.colors.text};
   font-size: 18px;
   font-weight: 500;
+`;
+
+export const LabelText = styled.span`
+  display: block;
+  margin-bottom: ${props => props.theme.spacing(1)};
 `;
 
 export const Field = styled(FormikField)`
@@ -75,7 +77,8 @@ export const FormButton = styled.button`
 `;
 
 export const ErrorMessage = styled(Message)`
-  margin-top: 4px;
+  margin-top: ${props => props.theme.spacing(1)};
+  padding-left: ${props => props.theme.spacing(1)};
 
   font-weight: 400;
   font-size: 12px;
