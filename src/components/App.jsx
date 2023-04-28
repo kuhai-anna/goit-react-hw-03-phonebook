@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { GlobalStyle } from 'GlobalStyle';
 import { Section } from './Section/Section';
 import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
@@ -66,7 +65,6 @@ export class App extends Component {
             onDelete={this.deleteContact}
           />
         </Section>
-        <GlobalStyle />
       </>
     );
   }
