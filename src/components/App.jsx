@@ -15,6 +15,12 @@ export class App extends Component {
     filter: '',
   };
 
+  componentDidUpdate(prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
   // перевірка і додавання нових контактів
   formSubmitHandler = contact => {
     const { contacts } = this.state;
